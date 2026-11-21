@@ -1,6 +1,7 @@
 export const profile = {
   name: "Adamya Mehta",
   role: "Full-Stack Engineer",
+  tagline: ["Full-stack engineer.", "AI products.", "Shipped solo."],
   email: "mehtaadamya7@gmail.com",
   phone: "+91 9183155787",
   linkedin: "https://linkedin.com/in/adamya-mehta",
