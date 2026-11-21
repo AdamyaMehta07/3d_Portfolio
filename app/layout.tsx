@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, JetBrains_Mono } from "next/font/google";
 import FilmOverlay from "@/components/FilmOverlay";
+
+import "lenis/dist/lenis.css";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const display = Bebas_Neue({
@@ -25,8 +28,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${mono.variable}`}>
-      <body>{children}
-        <FilmOverlay />
+      <body>
+         <SmoothScroll />
+          {children}
+          <FilmOverlay />
       </body>
     </html>
   );

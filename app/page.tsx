@@ -23,6 +23,12 @@ export default function Home() {
 
         <p className="opacity-60">00:00:00:00</p>
       </main>
+            <section className="relative z-10 min-h-[150vh] px-8 pt-[calc(var(--bar)+2rem)] pointer-events-none">
+        <p className="text-lime">REEL 01 / SCENE 02</p>
+        <h2 className="font-display text-[12vw] leading-[0.85] uppercase mt-8">
+          Test <span className="text-lime">scroll</span>
+        </h2>
+      </section>
     </>
   );
 }
