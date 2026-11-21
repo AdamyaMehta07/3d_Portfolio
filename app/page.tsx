@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <HeroSceneLoader />
-      <main className="relative z-10 min-h-screen p-8 flex flex-col justify-between pointer-events-none">
+      <main className="relative z-10 min-h-screen px-8 pt-[calc(var(--bar)+2rem)] pb-[calc(var(--bar)+2rem)] flex flex-col justify-between pointer-events-none">
         <p className="text-lime">REEL 01 / SCENE 01</p>
 
         <div>
