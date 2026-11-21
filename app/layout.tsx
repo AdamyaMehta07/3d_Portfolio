@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, JetBrains_Mono } from "next/font/google";
 import FilmOverlay from "@/components/FilmOverlay";
-
+import Preloader from "@/components/Preloader";
 import "lenis/dist/lenis.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
@@ -29,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${mono.variable}`}>
       <body>
+         <Preloader />
          <SmoothScroll />
           {children}
           <FilmOverlay />

@@ -68,3 +68,40 @@ body {
     animation: none;
   }
 }
+
+.leader-sweep {
+  background: conic-gradient(
+    from 0deg,
+    rgba(182, 255, 0, 0.28),
+    rgba(182, 255, 0, 0) 75%
+  );
+  animation-name: sweep;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sweep {
+  to { transform: rotate(360deg); }
+}
+
+.leader-num {
+  animation: num-in 0.12s steps(2) 1;
+}
+
+@keyframes num-in {
+  0%   { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* the cut: quick flicker, then gone */
+.leader-cut {
+  animation: cut 0.28s steps(1) forwards;
+}
+
+@keyframes cut {
+  0%   { opacity: 1; }
+  30%  { opacity: 0.2; }
+  55%  { opacity: 0.9; }
+  80%  { opacity: 0; }
+  100% { opacity: 0; }
+}
