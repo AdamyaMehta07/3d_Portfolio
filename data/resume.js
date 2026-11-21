@@ -5,6 +5,7 @@ export const profile = {
   phone: "+91 9183155787",
   linkedin: "https://linkedin.com/in/adamya-mehta",
   github: "https://github.com/AdamyaMehta07",
+  portrait: "/images/portrait.jpg",
   summary:
     "I ship production AI SaaS solo. Three live products, one year of MERN and LLM pipeline work.",
 };
@@ -17,8 +18,8 @@ export const projects = [
     stat: { value: "60%", label: "fewer LLM tokens" },
     blurb:
       "Reviews GitHub repos across 9 quality dimensions. Filters noise before the LLM sees it.",
-    live: "",
-    repo: "",
+    live: "https://aicodereviewer-ten.vercel.app/",
+    repo: "https://github.com/AdamyaMehta07/aicodereviewer",
   },
   {
     id: "02",
@@ -27,8 +28,8 @@ export const projects = [
     stat: { value: "85%", label: "less build time" },
     blurb:
       "Turns a resume into a deployed portfolio in under 10 seconds, with one-click Netlify deploy.",
-    live: "",
-    repo: "",
+    live: "https://ai-resume2portfolio.vercel.app/",
+    repo: "https://github.com/AdamyaMehta07/AI-resume2portfolio",
   },
   {
     id: "03",
@@ -37,8 +38,8 @@ export const projects = [
     stat: { value: "40%", label: "faster page load" },
     blurb:
       "Invoice generator with zero-layout-shift PDF export and 50+ invoices stored locally.",
-    live: "",
-    repo: "",
+    live: "https://invoice-forge-beige.vercel.app/",
+    repo: "https://github.com/AdamyaMehta07/InvoiceForge",
   },
 ];
 
